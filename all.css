@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+.wrap{
+  margin: 0px auto;
+  max-width: 1024px; 
+}
+
+.header{
+  background: url("img/Hero.png");
+  width: 1024px;
+  height: 380px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+.header h1{
+  /* font-family: 'PingFangTC-Regular'; */
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: 3.89px;
+  text-align: center;
+  margin-top: 89px;
+}
+
+.header select{
+  /* 移除箭頭內建樣式 */
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url("img/icons_down.png") no-repeat right center transparent;
+  background-position:419px;
+  background-color: rgba(255,255,255,0.70);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  width: 452px;
+  height: 48px;
+  /* font-family: PingFangTC-Regular; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 21px;
+  margin-top: 96px;
+  padding-left: 9.5px; 
+}
+
+.hotDistrict{
+  width: 800px;
+  height: 112px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+  border-radius: 5px;
+  /* font-family: 'AppleSystemUIFont'; */
+  font-size: 18px;
+  color: #000000;
+  position: relative;
+  margin: -28px auto 0;
+  padding: 20px 0 18px 26px;
+}
+
+.hotDistrict h2{
+  text-align: left;
+}
+
+.hotDistrict ul{
+  display: flex;
+}
+
+.hotDistrict button{
+  border: none;
+  margin-left: 30px;
+  margin-top: 14px;
+  width: 130px;
+  height: 42px;
+  /* font-family: 'PingFangTC-Regular'; */
+  font-size: 20px;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.purple{
+  background: #8A82CC;
+}
+
+.orange{
+  background: #FFA782;
+}
+
+.yellow{
+  background: #F5D005;
+}
+
+.blue{
+  background: #559AC8;
+}
+
+.border{
+  border: none !important;
+  border-bottom: 2px solid #559AC8 !important;
+  width: 900px;
+  margin: 49px auto 0;
+  position: relative;
+  height: 0;
+}
+
+.border::after{
+  content:'';
+  position: absolute;
+  width:100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-bottom: 2px dashed #fff !important;
+}
+
+.border div{
+  border: 1px solid #559AC8;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  position: relative;
+  top: -12px;
+  margin-left: calc(50% - 12px);
+  z-index: 1;
+  text-align: center;
+  background: #fff;
+}
+.border div::after{
+  content:'';
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background:#559AC8;
+  mask: url(img/icons_down.png) no-repeat center center;
+  -webkit-mask: url(img/icons_down.png) no-repeat center center;
+}
+
+.content{
+  margin: 76px 0 49px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.content>p{
+  text-align: center;
+  /* font-family: SFNSDisplay; */
+  font-size: 36px;
+  color: #8A82CC;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.contentItem{
+  width: 464px;
+  height: 273px;
+  margin: 24px;
+  font-size: 16px;
+}
+
+.contentPhoto{
+  background: url("https://fakeimg.pl/464x155/") center/cover;
+  width: 464px;
+  height: 155px;
+  position: relative;
+  color: #FFFFFF;              
+}
+
+.contentPhoto p{
+  position: absolute;
+  left: 22px;
+  top: 117px;
+  font-family: 'SFNSDisplay';
+  font-size: 24px;
+}
+
+.contentPhoto span{
+  position: absolute;
+  left: 391px;
+  top: 125px;
+  font-family: 'PingFangTC-Regular';
+}
+
+.contentInfo{
+  padding: 15px 24px 20px;
+}
+
+.contentInfo p{
+  margin-bottom: 16px;
+}
+
+.contentInfo span+span{
+  float: right;
+}
+
+.pagination{
+  justify-content: center;
+}
+
+.pagination li{
+  margin-left: 16px;
+}
+
+.pagination li a{
+  text-decoration:none;
+  font-family: 'AppleSystemUIFont';
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+
+
+.footer{
+  margin-top: 41px;
+  background: #559AC8;
+  padding: 24px 0 24px;
+  text-align: center;
+  font-family: 'AppleSystemUIFont';
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.footer p{
+  color: #FFD366;
+  margin-top: 15px;
+}
